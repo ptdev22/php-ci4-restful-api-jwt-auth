@@ -26,4 +26,18 @@ php spark make:model UserModel
 php spark make:model ClientModel
 
 
+
+- use jwt
+composer require firebase/php-jwt
+
+
+
+// create filter
+php spark make:filter JWTAuthenticationFilter
+
+// create controller
+php spark make:controller Auth
+
+// create user rules
+php spark make:validation user_rules
 ```
